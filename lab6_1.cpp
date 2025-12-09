@@ -2,19 +2,21 @@
 using namespace std;
 
 int main(){
-    int i ; int even = 0 ; int odd = 0;  
-
-
-    cin >> i ;
+    int i = 1; int even = 0 ; int odd = 0;  
     while (i != 0 ){
-        cout << "Enter an integer: " << i << endl;
+        cout << "Enter an integer: ";
+        cin >> i ;
+        if (i == 0) {
+            break;
+        }
+        
         if (i % 2 == 0){
             even ++;
         }
         else {
             odd ++ ;
         }
-        cin >> i ;
+
 
     }    
     cout << "#Even numbers = " << even << endl;
